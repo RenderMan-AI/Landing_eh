@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>España e Hijos | Del cerdo ibérico al producto final</title>
+  <meta name="description" content="Landing interactiva demostrativa para España e Hijos: despiece del cerdo ibérico, proceso, canales comerciales y soluciones para restauración, distribución y retail gourmet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="España e Hijos inicio">
+      <img src="./assets/logo-espana-e-hijos.svg" alt="España e Hijos" class="brand-logo" />
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#despiece">Despiece</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#canales">Canales</a>
+      <a href="#calidad">Calidad</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="#contacto">Solicitar catálogo</a>
+    <button class="nav-toggle" aria-label="Abrir navegación" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Producto ibérico para profesionales</p>
+        <h1>Del cerdo ibérico al producto final</h1>
+        <p class="hero-subtitle">Descubre de forma interactiva cómo España e Hijos selecciona, procesa y comercializa cada corte del cerdo ibérico para profesionales.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#despiece">Explorar despiece interactivo</a>
+          <a class="btn btn-secondary" href="#contacto">Contactar con el equipo comercial</a>
+        </div>
+      </div>
+      <aside class="hero-card reveal" aria-label="Resumen comercial">
+        <span class="hero-card-line"></span>
+        <strong>Tradición, criterio de corte y soluciones comerciales.</strong>
+        <p>Una pieza interactiva para explicar el valor del ibérico desde el despiece hasta el canal de venta.</p>
+      </aside>
+    </section>
+
+    <section class="section intro reveal">
+      <p class="section-kicker">Mapa de producto</p>
+      <h2>Un recorrido visual por las piezas clave del cerdo ibérico</h2>
+      <p>Selecciona cada zona para ver su aplicación comercial, proceso habitual y producto final asociado. El prototipo evita datos legales o certificaciones no verificadas.</p>
+    </section>
+
+    <section class="section interactive" id="despiece">
+      <div class="interactive-layout">
+        <div class="pig-stage reveal" aria-label="Cerdo ibérico 3D interactivo">
+          <div class="model-toolbar">
+            <span id="model-status">Modelo 3D interactivo</span>
+            <button class="ghost-button" id="reset-view" type="button">Recentrar</button>
+          </div>
+          <div id="pig-3d" class="pig-3d" role="img" aria-label="Modelo 3D estilizado del cerdo ibérico con zonas clicables"></div>
+          <p class="interaction-hint">Pasa el ratón o toca una pieza. Click/tap para separarla y consultar su aplicación comercial.</p>
+          <div class="mobile-part-selector" aria-label="Selector de piezas para móvil"></div>
+        </div>
+
+        <article class="info-card reveal" aria-live="polite">
+          <p class="section-kicker">Pieza seleccionada</p>
+          <h3 id="part-title">Jamón</h3>
+          <p id="part-description">Pieza noble de alto reconocimiento comercial, asociada a formatos curados y a una presentación premium para venta especializada.</p>
+          <dl>
+            <div><dt>Proceso de elaboración</dt><dd id="part-process">Selección de pieza, perfilado, salado, curación y maduración controlada según especificación comercial.</dd></div>
+            <div><dt>Producto final asociado</dt><dd id="part-product">Jamón ibérico curado, centro deshuesado o formatos loncheados.</dd></div>
+            <div><dt>Uso comercial recomendado</dt><dd id="part-use">Retail gourmet, hostelería premium, distribución especializada y cestas corporativas.</dd></div>
+          </dl>
+          <a class="btn btn-card" href="#canales">Ver aplicación comercial</a>
+        </article>
+      </div>
+
+      <div class="process-line reveal" id="proceso" aria-label="Línea de proceso">
+        <span>Selección</span><i></i><span>Despiece</span><i></i><span>Elaboración</span><i></i><span>Control de calidad</span><i></i><span>Comercialización</span>
+      </div>
+
+      <div class="filters reveal" aria-label="Filtros comerciales">
+        <button class="filter active" data-filter="all">Todo</button>
+        <button class="filter" data-filter="curados">Curados</button>
+        <button class="filter" data-filter="frescos">Frescos</button>
+        <button class="filter" data-filter="elaborados">Elaborados</button>
+        <button class="filter" data-filter="restauracion">Restauración</button>
+        <button class="filter" data-filter="retail">Retail</button>
+      </div>
+    </section>
+
+    <section class="section channels" id="canales">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Canales comerciales</p>
+        <h2>Soluciones adaptadas a cada destino de venta</h2>
+      </div>
+      <div class="card-grid">
+        <article class="channel-card reveal"><span>01</span><h3>Restauración</h3><p>Formatos y cortes pensados para cocina profesional, servicio ágil y aprovechamiento del producto en carta, menús o propuestas gastronómicas.</p></article>
+        <article class="channel-card reveal"><span>02</span><h3>Distribución</h3><p>Soluciones orientadas a surtido, regularidad, clasificación de referencias y presentación clara para operadores comerciales.</p></article>
+        <article class="channel-card reveal"><span>03</span><h3>Retail gourmet</h3><p>Productos con presentación cuidada, narrativa de origen y formatos adecuados para tienda especializada, regalo y consumo premium.</p></article>
+      </div>
+    </section>
+
+    <section class="section quality reveal" id="calidad">
+      <div>
+        <p class="section-kicker">Calidad y confianza</p>
+        <h2>Control de proceso y conocimiento del producto</h2>
+      </div>
+      <blockquote>“España e Hijos combinan experiencia, control de procesos y conocimiento del producto ibérico para ofrecer soluciones adaptadas a cada canal comercial”.</blockquote>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="cta-inner reveal">
+        <p class="section-kicker">Contacto comercial</p>
+        <h2>Convierte el producto ibérico en una experiencia comercial</h2>
+        <p>Solicita información sobre formatos, cortes y soluciones para tu negocio.</p>
+        <a class="btn btn-primary" href="mailto:comercial@espanaehijos.example">Contactar con España e Hijos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="./assets/logo-espana-e-hijos.svg" alt="España e Hijos" />
+      <p>Producto ibérico para profesionales.</p>
+    </div>
+    <nav aria-label="Enlaces de pie de página">
+      <a href="#despiece">Despiece</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#canales">Canales</a>
+      <a href="#calidad">Calidad</a>
+    </nav>
+    <p class="legal">Prototipo interactivo demostrativo. Los textos y datos deben adaptarse a la información oficial de España e Hijos.</p>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
